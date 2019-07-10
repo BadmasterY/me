@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mr.'s homepage</title>
+    <style>
+        html,body {
+            margin: 0;
+            padding: 0;
+        }
+        html,body,#app {
+            height: 100%;
+            background: #f2f2f2;
+        }
+        .spinner {
+            animation: loadingI 2s linear infinite;
+            position: relative;
+            width: 45px;
+            height: 45px;
+            margin: 0 auto;
+            top: 50%;
+        }
+
+        .bubble-1,
+        .bubble-2 {
+            animation: bounce 2s ease-in-out infinite;
+            position: absolute;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background-color: #515a6e;
+        }
+
+        .bubble-2 {
+            animation-delay: -1.0s;
+            top: auto;
+            bottom: 0;
+        }
+
+        @keyframes loadingI {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: scale(0.0);
+            }
+
+            50% {
+                transform: scale(1.0);
+            }
+        }
+    </style>
+<link href="css/chunk/vendor.3232f1b8c06605ca4b70.css" rel="stylesheet"><link href="css/main.3232f1b8c06605ca4b70.css" rel="stylesheet"></head>
+
+<body>
+    <div id="app">
+        <div class="spinner">
+            <div class="bubble-1"></div>
+            <div class="bubble-2"></div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/chunk/manifest.72bec273.js"></script><script type="text/javascript" src="js/chunk/vendor.ef7a9b9b.js"></script><script type="text/javascript" src="js/main.5ad743da.js"></script></body>
+
+</html>
